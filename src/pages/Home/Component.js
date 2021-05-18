@@ -35,6 +35,11 @@ function Welcome() {
             id="Phone"
             label="Phone Number"
             name="Phone"
+            inputProps={{
+              form: {
+                autocomplete: "off",
+              },
+            }}
           />
           <TextField
             variant="outlined"
@@ -45,7 +50,12 @@ function Welcome() {
             label="Password"
             type="password"
             id="password"
-            autoComplete="current-password"
+            inputProps={{
+              autocomplete: "new-password",
+              form: {
+                autocomplete: "off",
+              },
+            }}
           />
           <Button
             type="submit"

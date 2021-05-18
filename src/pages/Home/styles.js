@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import pink from "@material-ui/core/colors/pink"
 
 const useStyles = makeStyles(theme => ({
     wrapper: {
@@ -24,7 +25,7 @@ const useStyles = makeStyles(theme => ({
     },
     avatar: {
         margin: theme.spacing(1),
-        backgroundColor: theme.palette.secondary.main,
+        backgroundColor: theme.palette.secondary.main || pink[500]
     },
 }));
 
